@@ -1,0 +1,940 @@
+{
+  "_notes": "Dates are YYYY-MM (or YYYY). 'coauthors' excludes Matthew Maltman. 'details' is the text after the venue (e.g. volume, year); in the policy grid it defaults to the formatted date. Optional on any entry: media, citedBy (lists of {outlet, url, title, date}); seeAlso (list of {title, url, date, venue}) for companion newsletter pieces, rendered as a 'See also' line above the media line. Policy sources: e61-research, e61-blog, ofe, other (other needs 'outlet'). Optional 'figure' on any research entry: {slug (CSV at build/figures/<slug>.csv, first column is x), title, takeaway (aria-label), caption, source, yLabel, yMin?, yMax?, xStep?, series: [{column, label, role: main|compare, dashed?}], events: [{x, label}], bands: [{from, to, label}]}; rendered as an inline SVG line chart under the entry.",
+  "sources": {
+    "e61-research": {
+      "label": "e61 Research"
+    },
+    "e61-blog": {
+      "label": "e61 Newsletter"
+    },
+    "ofe": {
+      "label": "One Final Effort"
+    },
+    "other": {
+      "label": "Other"
+    }
+  },
+  "workingPapers": [
+    {
+      "title": "What Local Land Use Reform Does, and Doesn't, Do",
+      "url": "https://e61.in/what-local-land-use-reform-does-and-doesnt-do/",
+      "coauthors": [
+        "Dominic Behrens",
+        "Theo Gibbons"
+      ],
+      "venue": "e61 Institute Working Paper",
+      "details": "2026",
+      "media": [
+        {
+          "outlet": "HIA",
+          "title": "New independent research supports HIA call for lot size reform",
+          "date": "2026-07",
+          "url": "https://hia.com.au/our-industry/newsroom/planning-and-environment/2026/07/new-independent-research-supports-hia-call-for-lot-size-reform"
+        },
+        {
+          "outlet": "Local Ipswich News",
+          "title": "Smaller Lot Sizes Could Boost Australian Housing Supply",
+          "date": "2026-08",
+          "url": "https://localipswichnews.com.au/news/new-research-backs-calls-to-ease-lot-size-rules-and-boost-supply/"
+        }
+      ],
+      "seeAlso": [
+        {
+          "title": "To Increase Housing Supply, Governments Should Target Bans, Not Burdens",
+          "url": "https://e61.in/to-increase-housing-supply-governments-should-target-bans-not-burdens/",
+          "date": "2026-07",
+          "venue": "e61 Newsletter"
+        }
+      ],
+      "figure": {
+        "slug": "adelaide_fig1_new_lots_per_year",
+        "title": "Figure: New lots per year",
+        "takeaway": "New lots in Campbelltown more than doubled while lower minimum lot sizes applied, from 351 in 2014 to a peak of 743 in 2017, then fell back to around the control-council average after the reform was reversed.",
+        "caption": "Campbelltown's new lots rose sharply while lower minimum lot sizes applied and fell back after the reversal. Control is the average of six inner and middle Adelaide councils. 2025 is probably a part-year.",
+        "source": "SA land division applications register.",
+        "yLabel": "New lots (per LGA for controls)",
+        "series": [
+          {
+            "column": "campbelltown_new_lots",
+            "label": "Campbelltown",
+            "role": "main"
+          },
+          {
+            "column": "control_new_lots_per_lga",
+            "label": "Control avg.",
+            "role": "compare"
+          }
+        ],
+        "bands": [
+          {
+            "from": 2013.5,
+            "to": 2019.0,
+            "label": "150sqm reform active (2015–2019)"
+          }
+        ],
+        "events": [],
+        "yTicks": [
+          300,
+          400,
+          500,
+          600,
+          700
+        ],
+        "yRange": [
+          225,
+          760
+        ]
+      },
+      "abstract": "What happens when part of a city cuts minimum lot sizes? We study a 2014 reform where a council in Adelaide cut them from 350 sqm to as low as 150 sqm, until the policy was partly reversed in 2019. The reform increased building approvals by 67 per cent, driven entirely by townhouses and rowhouses; the reversal returned the treatment effect to insignificant levels, providing dose-response evidence that lot-size regulation was a binding constraint. Established local firms already producing medium-density housing primarily built the new homes, with no evidence of capacity diversion. Movers into new housing were predominantly households in their prime family-formation years, upgrading out of cheaper rental housing. Using linked Census microdata, we trace the movement chains they set off: each mover typically vacates a cheaper dwelling, occupied by a household further down the income distribution. Chains also track the lifecycle: occupants further along the chain are younger and more often renting, with age composition explaining part of the income gradient. Concerns about amenity costs drove the reform’s reversal; across the outcomes we can measure we find little deterioration."
+    },
+    {
+      "title": "Zoning Reform and Construction Sector Productivity",
+      "url": "https://doi.org/10.2139/ssrn.5386023",
+      "coauthors": [],
+      "venue": "SSRN Working Paper",
+      "details": "2025",
+      "media": [
+        {
+          "outlet": "AAP",
+          "title": "NZ offers blueprint for home-building productivity fix",
+          "date": "2025-09",
+          "url": "https://aapnews.aap.com.au/news/nz-offers-blueprint-for-home-building-productivity-fix"
+        },
+        {
+          "outlet": "AFR (Richard Holden)",
+          "title": "What Australia can learn from the Kiwis to boost housing supply",
+          "date": "2025-09",
+          "url": "https://www.afr.com/policy/economy/what-australia-can-learn-from-the-kiwis-to-boost-housing-supply-20250918-p5mw6k"
+        }
+      ],
+      "citedBy": [
+        {
+          "outlet": "Gerard de Valence",
+          "title": "Construction Productivity, The AI Plan, and Investment in Data Centres and Energy",
+          "date": "2025-12",
+          "url": "https://gerarddevalence.substack.com/p/construction-productivity-the-ai"
+        }
+      ],
+      "seeAlso": [
+        {
+          "title": "What Can Australia Learn from New Zealand About Construction Productivity?",
+          "url": "https://e61.in/what-can-australia-learn-from-new-zealand-about-construction-productivity/",
+          "date": "2025-09",
+          "venue": "e61 Newsletter"
+        },
+        {
+          "title": "Can Zoning Reform Increase Construction Productivity? Suggestive Evidence from New Zealand",
+          "url": "https://onefinaleffort.com/blog/can-zoning-reform-increase-construction-productivity-suggestive-evidence-from-new-zealand",
+          "date": "2024-09",
+          "venue": "One Final Effort"
+        }
+      ],
+      "figure": {
+        "slug": "construction_productivity_3yr",
+        "title": "Figure: Construction productivity, NZ vs Australia",
+        "takeaway": "On a 3-year rolling average rebased to 2010 = 100, residential construction productivity in New Zealand has pulled ahead of Australia's since the mid-2010s: 104 versus 87 in 2023.",
+        "caption": "Real output per hour worked in residential construction, indexed to 100 in 2010.",
+        "source": "Maltman (2025).",
+        "yLabel": "Index, 2010 = 100, 3-year rolling average",
+        "yMin": 85,
+        "yMax": 120,
+        "series": [
+          {
+            "column": "new_zealand",
+            "label": "New Zealand",
+            "role": "main"
+          },
+          {
+            "column": "australia",
+            "label": "Australia",
+            "role": "compare"
+          }
+        ],
+        "events": [],
+        "yStep": 5
+      },
+      "abstract": "Construction sector productivity has stagnated or declined across much of the developed world in recent decades. This paper highlights a notable exception: New Zealand in the 2010s, where labour and multifactor productivity in construction each rose by over 15%. These gains were concentrated in building construction and closely aligned with the timing of widespread zoning reforms permitting medium- and high-density housing in three regions. A simple estimate suggests zoning reform increased Auckland's construction productivity by approximately 8%. I present evidence that upzoning drove productivity through four channels: (a) substantially increased dwellings completed per worker, which more than doubled in Auckland; (b) shifting construction towards higher-productivity regions; (c) increased competition by facilitating a more accessible medium-density construction market; and (d) raising average firm size in residential construction. While other partial explanations for New Zealand's construction productivity boom exist, these complement rather than contradict the role of zoning reform. Zoning reform offers a practical strategy for governments aiming to boost construction productivity."
+    },
+    {
+      "title": "Migrant Qualification Recognition and Labour Market Outcomes",
+      "url": null,
+      "coauthors": [
+        "Ishita Chatterjee",
+        "Christopher Parsons",
+        "Louis Richardson",
+        "Jackline Wahba"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Dispelling Myths: Reviewing the Evidence on Zoning Reforms in Auckland",
+      "url": "https://doi.org/10.1016/j.landusepol.2025.107498",
+      "coauthors": [
+        "Stuart Donovan"
+      ],
+      "venue": "Land Use Policy",
+      "details": "151, 2025",
+      "citedBy": [
+        {
+          "outlet": "More Housing (2023)",
+          "title": "A debate over Auckland's 2016 upzoning",
+          "date": "2023-06",
+          "url": "https://morehousing.substack.com/p/auckland-debate"
+        },
+        {
+          "outlet": "More Housing (2025)",
+          "title": "The Auckland debate continues",
+          "date": "2025-02",
+          "url": "https://morehousing.substack.com/p/auckland-debate-continues"
+        },
+        {
+          "outlet": "Governance Cybernetics",
+          "title": "Beyond Skepticism: Data Confirms Auckland's Zoning Reforms Delivered on Housing Promises",
+          "date": "2025-02",
+          "url": "https://www.governance.fyi/p/beyond-skepticism-data-confirms-aucklands"
+        }
+      ],
+      "seeAlso": [
+        {
+          "title": "A Response to Murray and Helm on Auckland's Upzoning",
+          "url": "https://onefinaleffort.com/blog/a-response-to-murray-and-helm-on-aucklands-upzoning",
+          "date": "2023-06",
+          "venue": "One Final Effort"
+        }
+      ],
+      "abstract": "In 2016, the city of Auckland adopted zoning reforms that enabled more housing on approximately three-quarters of its urban land. Three subsequent studies have found that these reforms increased housing supply and reduced rents. Two economists have, however, criticised these studies on blogs and social media, describing their findings as a “myth”. Despite their informal nature, these critiques have been cited in formal planning and policy processes. Here, we review these critiques and find them to have little to no merit. Specifically, the critiques misunderstand the papers’ methods and rely on inappropriate analyses. In our view, there is remarkably robust evidence that zoning reforms increased housing supply and reduced rents in Auckland."
+    },
+    {
+      "title": "Going It Alone: The Impact of Upzoning on Housing Construction in Lower Hutt",
+      "url": "https://doi.org/10.1016/j.jhe.2024.102032",
+      "coauthors": [
+        "Ryan Greenaway-McGrevy"
+      ],
+      "venue": "Journal of Housing Economics",
+      "details": "67, 2025",
+      "media": [
+        {
+          "outlet": "The Post (Eric Crampton)",
+          "title": "This is why Wellington should be called Lowerer Hutt",
+          "date": "2024-02",
+          "url": "https://www.nzinitiative.org.nz/reports-and-media/opinion/this-is-why-wellington-should-be-called-lowerer-hutt/"
+        }
+      ],
+      "citedBy": [
+        {
+          "outlet": "Governance Cybernetics",
+          "title": "Zoning Reform Works (Even For Small & Mid Sized Cities): The Lower Hutt Evidence",
+          "date": "2025-02",
+          "url": "https://www.governance.fyi/p/zoning-reform-works-even-for-small"
+        },
+        {
+          "outlet": "Urbanomics",
+          "title": "Thoughts on affordable housing IX",
+          "date": "2025-05",
+          "url": "https://urbanomics.substack.com/p/thoughts-on-affordable-housing-ix"
+        }
+      ],
+      "figure": {
+        "slug": "lower_hutt_synthetic_control",
+        "title": "Figure: Lower Hutt vs synthetic control",
+        "takeaway": "After Plan Change 43 in 2017, dwelling consents in Lower Hutt rose far above its synthetic control, reaching 12.2 per 1,000 residents in 2022 against 3.2 for synthetic Lower Hutt.",
+        "caption": "Dwelling consents per 1,000 residents. Synthetic Lower Hutt is a weighted mix of other councils that tracks Lower Hutt's consents before the 2017 upzoning.",
+        "source": "Maltman and Greenaway-McGrevy (2025); Stats NZ building consents.",
+        "yLabel": "Consents per 1,000 residents",
+        "series": [
+          {
+            "column": "lower_hutt_actual",
+            "label": "Lower Hutt",
+            "role": "main"
+          },
+          {
+            "column": "synthetic_lower_hutt",
+            "label": "Synthetic",
+            "role": "compare",
+            "dashed": true
+          }
+        ],
+        "events": [
+          {
+            "x": 2017,
+            "label": "Plan Change 43"
+          }
+        ]
+      },
+      "abstract": "This paper studies a sequence of zoning reforms enacted in Lower Hutt, a constituent municipality of the wider Wellington metropolitan region of New Zealand. Beginning in the late 2010s, Lower Hutt independently implemented a sequence of widespread zoning changes to enable medium- and high-density housing in residential areas. Using a synthetic control to specify the policy counterfactual, we find that these zoning changes generated a three-fold increase in consents per capita and nearly tripled the number of housing starts over the six years subsequent to the onset of the reforms. Depending on how potential displacement effects are accounted for, the Lower Hutt reforms increased housing starts across the wider metropolitan region by approximately 10 to 18%. We also present evidence that the upzonings reduced rents by around 21% relative to the counterfactual."
+    },
+    {
+      "title": "Perverse Policy Incentives and Inferior Economic Outcomes",
+      "url": "https://doi.org/10.1093/migration/mnaf050",
+      "coauthors": [
+        "Christopher Parsons"
+      ],
+      "venue": "Migration Studies",
+      "details": "13(4), 2025",
+      "abstract": "Between 1999 and 2012, Australia enacted a raft of policies that advantaged overseas students when applying for permanent residency, through the so-called 880 visa series. These policies greatly enhanced prospective students’ prospects to secure permanent residency when pursuing specific qualifications. Leveraging rich longitudinal administrative data linked to the universe of permanent visas issued in Australia, we analyse the economic implications of these historically skewed policy incentives. We document significant negative migrant selection. 880 migrants attracted lower incomes and exhibited lower probabilities of employment in high-skilled occupations, when compared to both migrants educated overseas as well as domestic students. 880 migrants achieved superior aggregate employment outcomes however, particularly in lower-skilled occupations unrelated to their fields of study. If visa streams are poorly designed therefore, any potential benefits of onshore education risk being crowded out by negative migrant selection."
+    }
+  ],
+  "longForm": [
+    {
+      "title": "Best Practice for Supply-Side Reform",
+      "url": "https://inflectionpoints.work/articles/best-practice-for-supply-side-reform",
+      "coauthors": [],
+      "venue": "Inflection Points",
+      "details": "Issue 03, November 2025",
+      "media": [
+        {
+          "outlet": "Inflection Points Podcast",
+          "title": "Matthew Maltman: Better stories about supply",
+          "date": "2026-01",
+          "url": "https://stack.inflectionpoints.work/p/matthew-maltman-better-stories-about"
+        }
+      ]
+    }
+  ],
+  "_commentaryNotes": "Op-eds in outside outlets. Optional 'related': {title, url} renders an 'On:' line. Two op-eds from The Australian to be added here. An empty list hides the section and its nav links.",
+  "commentary": [
+    {
+      "outlet": "The Australian",
+      "date": "2026-05",
+      "title": "Young v Old? Intergenerational Divide Is More Complicated Than That",
+      "coauthors": [
+        "Jack Buckley"
+      ],
+      "url": "https://www.theaustralian.com.au/commentary/growth-productivity-obvious-solutions-for-new-age-of-unfairness/news-story/33db4e6ce59d279ad77b439cd43a00a0",
+      "related": {
+        "title": "Rethinking Intergenerational Equity in Australia",
+        "url": "https://e61.in/rethinking-intergenerational-equity-in-australia/"
+      }
+    },
+    {
+      "outlet": "The Australian",
+      "date": "2023-07",
+      "title": "Why 'Politically Connected' Firms Risk Stagnation",
+      "coauthors": [
+        "Dan Andrews"
+      ],
+      "url": "https://www.theaustralian.com.au/commentary/why-politically-connected-firms-risk-economic-stagnation/news-story/5b085dbed231ed776576794b75895fb3",
+      "related": {
+        "title": "Political Economy: The Market for Government Contracts and Influence",
+        "url": "https://e61.in/political-economy-the-market-for-government-contracts-and-influence/"
+      }
+    }
+  ],
+  "policyTopics": [
+    "Housing",
+    "Tax",
+    "Transfers & Welfare",
+    "Fiscal & Macro",
+    "Labour Markets & Young People",
+    "Gambling & Policy Evaluation"
+  ],
+  "policy": [
+    {
+      "topic": "Tax",
+      "source": "e61-research",
+      "date": "2026-04",
+      "title": "Same Amount, Different Tax: Capital Income Tax Calculator",
+      "url": "https://e61.in/same-amount-different-tax-capital-income-tax-calculator/",
+      "coauthors": [
+        "Matt Nolan",
+        "Shogher Ohannessian"
+      ],
+      "venue": "e61 Institute Micro Note"
+    },
+    {
+      "topic": "Tax",
+      "source": "e61-research",
+      "date": "2026-02",
+      "title": "What Are We Discounting For? Thinking Through CGT Reform Options Utilising Property Data",
+      "url": "https://e61.in/what-are-we-discounting-for-thinking-through-cgt-reform-options-utilising-property-data/",
+      "coauthors": [
+        "Elyse Dwyer",
+        "Greg Kaplan",
+        "Gianni La Cava",
+        "Matt Nolan",
+        "Lachlan Vass"
+      ],
+      "venue": "e61 Institute Research Note"
+    },
+    {
+      "topic": "Tax",
+      "source": "e61-research",
+      "date": "2026-01",
+      "title": "Submission to the Senate Select Committee on the Operation of the Capital Gains Tax Discount",
+      "url": "https://e61.in/submission-to-the-senate-select-committee-on-the-operation-of-the-capital-gains-tax-discount/",
+      "coauthors": [
+        "Greg Kaplan",
+        "Matt Nolan"
+      ],
+      "venue": "e61 Institute Submission",
+      "media": [
+        {
+          "outlet": "AFR",
+          "title": "New technology could 'tax the country like it's 1999'",
+          "date": "2026-01",
+          "url": "https://www.afr.com/policy/economy/new-technology-could-tax-the-country-like-it-s-1999-20260114-p5nu0f"
+        },
+        {
+          "outlet": "AAP",
+          "title": "How treasurer could make capital gains taxes 'fairer'",
+          "date": "2026-01",
+          "url": "https://aapnews.aap.com.au/news/how-treasurer-could-make-capital-gains-taxes-fairer"
+        },
+        {
+          "outlet": "Accounting Times",
+          "title": "Back to 1999: Think tank floats return to pre-CGT discount cost base indexing",
+          "date": "2026-01",
+          "url": "https://www.accountingtimes.com.au/tax/back-to-1999-think-tank-floats-return-to-pre-cgt-discount-cost-base-indexing"
+        },
+        {
+          "outlet": "Financial Standard",
+          "title": "Replace capital gains discount with income averaging: e61",
+          "date": "2026-01",
+          "url": "https://www.financialstandard.com.au/news/replace-capital-gains-discount-with-income-averaging-e61-179811213"
+        },
+        {
+          "outlet": "ABC News",
+          "title": "Labor hasn't got a capital gains tax policy yet, but it's already making the case",
+          "date": "2026-03",
+          "url": "https://www.abc.net.au/news/2026-03-18/capital-gains-tax-labor-policy-federal-government/106465976"
+        }
+      ],
+      "seeAlso": [
+        {
+          "title": "Is There a Better Way to Reform the CGT Discount?",
+          "url": "https://e61.in/is-there-a-better-way-to-reform-the-cgt-discount/",
+          "date": "2026-01",
+          "venue": "e61 Newsletter"
+        }
+      ]
+    },
+    {
+      "topic": "Tax",
+      "source": "e61-research",
+      "date": "2025-07",
+      "title": "Who Pays Income Tax? The Distribution of Individual Income Tax Rates in Australia",
+      "url": "https://e61.in/who-pays-income-tax-the-distribution-of-individual-income-tax-rates-in-australia/",
+      "coauthors": [
+        "Greg Kaplan",
+        "Matt Nolan"
+      ],
+      "venue": "e61 Institute Micro Note"
+    },
+    {
+      "topic": "Transfers & Welfare",
+      "source": "e61-research",
+      "date": "2026-08",
+      "title": "Means Testing the NDIS: Fiscal and Distributional Effects",
+      "url": "https://e61.in/means-testing-the-ndis-fiscal-and-distributional-effects/",
+      "coauthors": [
+        "Pelin Akyol",
+        "Theo Gibbons",
+        "Matt Nolan"
+      ],
+      "venue": "e61 Institute Research Note",
+      "media": [
+        {
+          "outlet": "Health Services Daily",
+          "title": "NDIS means test would cut spending just 12% while removing support from 40%",
+          "date": "2026-08",
+          "url": "https://www.healthservicesdaily.com.au/ndis-means-test-would-cut-spending-just-12-while-removing-support-from-40/50823"
+        },
+        {
+          "outlet": "2GB",
+          "title": "Calls for NDIS means test despite federal government ruling it out",
+          "date": "2026-08",
+          "url": "https://www.2gb.com/calls-for-ndis-means-test-despite-federal-government-ruling-it-out/"
+        }
+      ]
+    },
+    {
+      "topic": "Transfers & Welfare",
+      "source": "e61-research",
+      "date": "2025-12",
+      "title": "Welfare for the Well Off? The Progressivity of Government Transfers by Income and Wealth",
+      "url": "https://e61.in/welfare-for-the-well-off-the-progressivity-of-government-transfers-by-income-and-wealth/",
+      "coauthors": [
+        "Matt Nolan",
+        "Ewan Rankin"
+      ],
+      "venue": "e61 Institute Micro Note",
+      "media": [
+        {
+          "outlet": "AFR",
+          "title": "Time to end welfare for the wealthy, says big business",
+          "date": "2026-04",
+          "url": "https://www.afr.com/policy/economy/time-to-end-welfare-for-the-wealthy-says-big-business-20260420-p5zpdr"
+        }
+      ]
+    },
+    {
+      "topic": "Transfers & Welfare",
+      "source": "e61-research",
+      "date": "2025-09",
+      "title": "How Does the Tax-Transfer System Replace Income After Job Loss?",
+      "url": "https://e61.in/how-does-the-tax-transfer-system-replace-income-after-job-loss/",
+      "coauthors": [
+        "Zachary Hayward",
+        "Matt Nolan"
+      ],
+      "venue": "e61 Institute Research Note"
+    },
+    {
+      "topic": "Transfers & Welfare",
+      "source": "e61-research",
+      "date": "2025-08",
+      "title": "Workforce Disincentives for Sole Parents: Introducing the e61 Tax-Transfer Calculator",
+      "url": "https://e61.in/e61-workforce-disincentive-calculator/",
+      "coauthors": [
+        "Matt Nolan"
+      ],
+      "venue": "e61 Institute Micro Note"
+    },
+    {
+      "topic": "Fiscal & Macro",
+      "source": "e61-research",
+      "date": "2026-02",
+      "title": "Rising Pressures, Fading Discipline: A Review of Australia's Fiscal Sustainability",
+      "url": "https://e61.in/rising-pressures-fading-discipline-a-review-of-australias-fiscal-sustainability/",
+      "coauthors": [
+        "Michael Brennan",
+        "Jack Buckley",
+        "Rose Khattar",
+        "Matt Nolan"
+      ],
+      "venue": "e61 Institute Policy Paper (e61–McKinnon)",
+      "media": [
+        {
+          "outlet": "Bloomberg",
+          "title": "Australia's High Fiscal Spending 'Unsustainable,' Report Shows",
+          "date": "2026-02",
+          "url": "https://www.bloomberg.com/news/articles/2026-02-19/australia-s-soaring-fiscal-spending-unsustainable-report-says"
+        },
+        {
+          "outlet": "PS News",
+          "title": "Spending out of control across all governments, new research warns",
+          "date": "2026-02",
+          "url": "https://psnews.com.au/spending-out-of-control-across-all-governments-new-research-warns/173992/"
+        }
+      ]
+    },
+    {
+      "topic": "Fiscal & Macro",
+      "source": "e61-research",
+      "date": "2025-07",
+      "title": "5 Ways Australia's Economy is Exceptional: Why Policymakers and Researchers Should Care",
+      "url": "https://e61.in/5-ways-australias-economy-is-exceptional-why-policymakers-and-researchers-should-care/",
+      "coauthors": [
+        "Ewan Rankin"
+      ],
+      "venue": "e61 Institute Policy Paper"
+    },
+    {
+      "topic": "Fiscal & Macro",
+      "source": "e61-research",
+      "date": "2024-10",
+      "title": "What If We Didn't Care? Implications of the Growth in the Care Economy for the Broader Macroeconomy",
+      "url": "https://e61.in/what-if-we-didnt-care-implications-of-the-growth-in-the-care-economy-for-the-broader-macroeconomy/",
+      "coauthors": [
+        "Ewan Rankin"
+      ],
+      "venue": "e61 Institute Research Note",
+      "media": [
+        {
+          "outlet": "AFR (9 Oct 2024)",
+          "title": "NDIS is sucking in workers from more efficient jobs",
+          "date": "2024-10",
+          "url": "https://www.afr.com/policy/economy/ndis-is-sucking-in-workers-from-more-efficient-jobs-20241007-p5kgdv"
+        },
+        {
+          "outlet": "AAP",
+          "title": "Care economy growing fast and boom set to continue",
+          "date": "2024-10",
+          "url": "https://aapnews.aap.com.au/news/state-and-territory-labour-market-divides-deepening"
+        },
+        {
+          "outlet": "AFR (18 Oct 2024)",
+          "title": "Chalmers fires back at 'snobby' critique of jobs boom",
+          "date": "2024-10",
+          "url": "https://www.afr.com/policy/economy/chalmers-fires-back-at-snobby-critique-of-government-jobs-boom-20241018-p5kjd3"
+        }
+      ],
+      "seeAlso": [
+        {
+          "title": "A Careful Transition in Australia's Labour Market",
+          "url": "https://e61.in/a-careful-transition-in-australias-labour-market/",
+          "date": "2024-10",
+          "venue": "e61 Newsletter"
+        }
+      ]
+    },
+    {
+      "topic": "Labour Markets & Young People",
+      "source": "e61-research",
+      "date": "2025-09",
+      "title": "How the Care Economy is Reshaping the Labour Market",
+      "url": "https://e61.in/how-the-care-economy-is-reshaping-the-labour-market/",
+      "coauthors": [],
+      "venue": "e61 Institute Research Note",
+      "media": [
+        {
+          "outlet": "SMH",
+          "title": "Why young women are beating young men in the job search, and earning more",
+          "date": "2025-09",
+          "url": "https://www.smh.com.au/business/the-economy/why-young-women-are-beating-young-men-in-the-job-search-and-earning-more-20250918-p5mw6v.html"
+        },
+        {
+          "outlet": "Region Canberra",
+          "title": "Young women getting more jobs than men thanks to growing care sector",
+          "date": "2025-09",
+          "url": "https://region.com.au/young-women-getting-more-jobs-than-men-thanks-to-growing-care-sector/906473/"
+        },
+        {
+          "outlet": "PS News",
+          "title": "Young women getting more jobs than men thanks to growing care sector",
+          "date": "2025-09",
+          "url": "https://psnews.com.au/young-women-getting-more-jobs-than-men-thanks-to-growing-care-sector/166802/"
+        }
+      ]
+    },
+    {
+      "topic": "Labour Markets & Young People",
+      "source": "e61-research",
+      "date": "2025-06",
+      "title": "Will Young Australians Be Better Off Than Past Generations?",
+      "url": "https://e61.in/will-young-australians-be-better-off-than-past-generations/",
+      "coauthors": [
+        "Pelin Akyol",
+        "Jack Buckley",
+        "Erin Clarke",
+        "Theo Gibbons",
+        "Rose Khattar"
+      ],
+      "venue": "e61 Institute Policy Paper",
+      "media": [
+        {
+          "outlet": "The New Daily",
+          "title": "Are young Australians falling behind or just running a different race?",
+          "date": "2025-07",
+          "url": "https://www.thenewdaily.com.au/finance/2025/07/08/stats-guy-young-australians"
+        },
+        {
+          "outlet": "Morningstar",
+          "title": "Will young Australians be better off than their parents?",
+          "date": "2025-10",
+          "url": "https://www.morningstar.com.au/personal-finance/will-young-australians-be-better-off-than-their-parents"
+        },
+        {
+          "outlet": "AFR",
+          "title": "Gen Z will be richer than their parents. But here's the catch",
+          "date": "2025-07",
+          "url": "https://www.afr.com/policy/economy/will-gen-z-be-richer-than-their-parents-20250709-p5mdq8"
+        }
+      ],
+      "seeAlso": [
+        {
+          "title": "Gen Z Will Earn More Than Any Generation in History. But When?",
+          "url": "https://e61.in/gen-z-will-earn-more-than-any-generation-in-history-but-when/",
+          "date": "2025-07",
+          "venue": "e61 Newsletter"
+        }
+      ]
+    },
+    {
+      "topic": "Labour Markets & Young People",
+      "source": "e61-research",
+      "date": "2025-07",
+      "title": "Who Will It HELP? How a Student Debt Cut Will Affect Young People",
+      "url": "https://e61.in/who-will-it-help-how-a-student-debt-cut-will-affect-young-people/",
+      "coauthors": [
+        "Jack Buckley"
+      ],
+      "venue": "e61 Institute Research Note",
+      "media": [
+        {
+          "outlet": "Guardian",
+          "title": "Labor's Hecs reduction bill not the fairest way to relieve student debt, economists say",
+          "date": "2025-07",
+          "url": "https://www.theguardian.com/australia-news/2025/jul/22/labors-hecs-reduction-bill-not-the-fairest-way-to-relieve-student-debt-economists-say"
+        },
+        {
+          "outlet": "AAP",
+          "title": "Uni debt relief set to benefit richer students more",
+          "date": "2025-07",
+          "url": "https://aapnews.aap.com.au/news/uni-debt-relief-set-to-benefit-richer-students-more"
+        },
+        {
+          "outlet": "The Nightly",
+          "title": "University HECS debt relief plan to benefit high earners more than low income graduates",
+          "date": "2025-07",
+          "url": "https://thenightly.com.au/politics/university-hecs-debt-relief-plan-to-benefit-high-earners-more-than-low-income-graduates--c-19231118"
+        },
+        {
+          "outlet": "AFR",
+          "title": "The graduates getting a winning deal on HECS debt relief",
+          "date": "2025-07",
+          "url": "https://www.afr.com/politics/federal/the-graduates-getting-a-winning-deal-on-hecs-debt-relief-20250630-p5mbbp"
+        },
+        {
+          "outlet": "Yahoo News",
+          "title": "Dire flaw in Labor's student fee cut plan",
+          "date": "2025-07",
+          "url": "https://au.news.yahoo.com/dire-flaw-labor-student-fee-093458053.html"
+        }
+      ],
+      "citedBy": [
+        {
+          "outlet": "The Conversation / Canberra Times (Andrew Norton)",
+          "title": "New bill would cut student loans. But risks 'debt treadmill' for some grads",
+          "date": "2025-07",
+          "url": "https://www.canberratimes.com.au/story/9024046/labors-20-per-cent-student-debt-cut-the-pros-and-cons-revealed/"
+        }
+      ],
+      "seeAlso": [
+        {
+          "title": "There Is a Better Way to Cut Student Debt",
+          "url": "https://e61.in/there-is-a-better-way-to-cut-student-debt/",
+          "date": "2025-07",
+          "venue": "e61 Newsletter"
+        }
+      ]
+    },
+    {
+      "topic": "Gambling & Policy Evaluation",
+      "source": "e61-research",
+      "date": "2025-12",
+      "title": "Gambling with Money You Don't Have: Understanding the Interaction Between Credit Cards and Sports Gambling",
+      "url": "https://e61.in/gambling-with-money-you-dont-have-understanding-the-interaction-between-credit-cards-and-sports-gambling/",
+      "coauthors": [
+        "Aditya Maitra"
+      ],
+      "venue": "e61 Institute Research Note",
+      "seeAlso": [
+        {
+          "title": "Convenience and Targeting: Lessons for Gambling Policy Reform",
+          "url": "https://e61.in/convenience-and-targeting-lessons-for-gambling-policy-reform/",
+          "date": "2026-01",
+          "venue": "e61 Newsletter"
+        }
+      ]
+    },
+    {
+      "topic": "Fiscal & Macro",
+      "source": "e61-blog",
+      "date": "2026-05",
+      "title": "Western Australia State Budget Preview: Boom, Bust, and the WA Budget",
+      "url": "https://e61.in/western-australia-state-budget-preview-boom-bust-and-the-wa-budget/",
+      "coauthors": [
+        "Michael Brennan"
+      ],
+      "venue": "e61 budget61"
+    },
+    {
+      "topic": "Fiscal & Macro",
+      "source": "e61-blog",
+      "date": "2026-04",
+      "title": "Rethinking Intergenerational Equity in Australia",
+      "url": "https://e61.in/rethinking-intergenerational-equity-in-australia/",
+      "coauthors": [
+        "Jack Buckley",
+        "Matt Nolan"
+      ],
+      "venue": "e61 budget61"
+    },
+    {
+      "topic": "Gambling & Policy Evaluation",
+      "source": "e61-blog",
+      "date": "2026-01",
+      "title": "What Can Bazball Teach Us About Policy Evaluation?",
+      "url": "https://e61.in/what-can-bazball-teach-us-about-policy-evaluation/",
+      "coauthors": [
+        "Aditya Maitra"
+      ],
+      "venue": "e61 plus61",
+      "media": [
+        {
+          "outlet": "AFR",
+          "title": "England's 'Bazball' exposed by Australian economists after Ashes loss",
+          "date": "2026-01",
+          "url": "https://www.afr.com/companies/sport/england-s-bazball-exposed-by-australian-economists-after-ashes-loss-20260107-p5ns9w"
+        }
+      ]
+    },
+    {
+      "topic": "Gambling & Policy Evaluation",
+      "source": "e61-blog",
+      "date": "2025-10",
+      "title": "Gambling on the Big Stage: How Do Gamblers Respond to Major Sporting Events?",
+      "url": "https://e61.in/gambling-on-the-big-stage-how-do-gamblers-respond-to-major-sporting-events/",
+      "coauthors": [
+        "Aditya Maitra"
+      ],
+      "venue": "e61 plus61"
+    },
+    {
+      "topic": "Labour Markets & Young People",
+      "source": "e61-blog",
+      "date": "2025-06",
+      "title": "Upcoming HELP Repayment Changes: What the Administrative Data Tells Us",
+      "url": "https://e61.in/upcoming-help-repayment-changes-what-the-administrative-data-tells-us/",
+      "coauthors": [
+        "Elyse Dwyer"
+      ],
+      "venue": "e61 plus61"
+    },
+    {
+      "topic": "Housing",
+      "source": "ofe",
+      "date": "2023-09",
+      "title": "Watch Auckland Transform from Zoning Reform",
+      "url": "https://onefinaleffort.com/blog/watch-auckland-transform",
+      "coauthors": [],
+      "venue": "One Final Effort"
+    },
+    {
+      "topic": "Housing",
+      "source": "ofe",
+      "date": "2022-12",
+      "title": "Housing Supply in Auckland Hits an Inflection Point",
+      "url": "https://onefinaleffort.com/blog/housing-supply-in-auckland-hits-an-inflection-point",
+      "coauthors": [],
+      "venue": "One Final Effort",
+      "citedBy": [
+        {
+          "outlet": "More Housing",
+          "title": "Auckland: the 2016 upzoning worked",
+          "date": "2023-02",
+          "url": "https://morehousing.substack.com/p/auckland"
+        }
+      ]
+    },
+    {
+      "topic": "Housing",
+      "source": "ofe",
+      "date": "2024-08",
+      "title": "Housing Deep Dive #1: How Important Are Vacant Homes?",
+      "url": "https://onefinaleffort.com/blog/housing-market-deep-dive-1-vacant-homes",
+      "coauthors": [],
+      "venue": "One Final Effort"
+    },
+    {
+      "topic": "Housing",
+      "source": "ofe",
+      "date": "2023-08",
+      "title": "An Early Look at the End of Single-Family Zoning in Spokane",
+      "url": "https://onefinaleffort.com/blog/an-early-look-at-the-end-of-single-family-zoning-in-spokane",
+      "coauthors": [],
+      "venue": "One Final Effort"
+    },
+    {
+      "topic": "Housing",
+      "source": "ofe",
+      "date": "2023-04",
+      "title": "A Detailed Look at the Outcomes of Minneapolis' Housing Reforms",
+      "url": "https://onefinaleffort.com/blog/a-detailed-look-at-minneapolis-housing-supply-reforms",
+      "coauthors": [],
+      "venue": "One Final Effort"
+    },
+    {
+      "topic": "Housing",
+      "source": "ofe",
+      "date": "2022-09",
+      "title": "How Popular Is Zoning Reform, Actually?",
+      "url": "https://onefinaleffort.com/blog/how-popular-is-zoning-reform-actually-",
+      "coauthors": [],
+      "venue": "One Final Effort"
+    },
+    {
+      "topic": "Housing",
+      "source": "ofe",
+      "date": "2022-09",
+      "title": "How to Make Housing Affordable in Australia",
+      "url": "https://onefinaleffort.com/blog/how-to-make-housing-affordable-in-australia",
+      "coauthors": [],
+      "venue": "One Final Effort"
+    },
+    {
+      "topic": "Housing",
+      "source": "ofe",
+      "date": "2024-03",
+      "title": "The Upzoning Tracker: Auckland, Lower Hutt, Minneapolis, and Spokane",
+      "url": "https://onefinaleffort.com/upzoningtracker",
+      "coauthors": [],
+      "venue": "One Final Effort",
+      "details": "Data, 2022–2024"
+    },
+    {
+      "topic": "Labour Markets & Young People",
+      "source": "e61-blog",
+      "date": "2024-12",
+      "title": "No Economy for Young Men",
+      "url": "https://e61.in/no-economy-for-young-men/",
+      "coauthors": [],
+      "venue": "e61 plus61"
+    },
+    {
+      "topic": "Gambling & Policy Evaluation",
+      "source": "e61-blog",
+      "date": "2025-01",
+      "title": "Is It the Sports Betting?",
+      "url": "https://e61.in/is-it-the-sports-betting/",
+      "coauthors": [],
+      "venue": "e61 plus61"
+    },
+    {
+      "topic": "Gambling & Policy Evaluation",
+      "source": "e61-blog",
+      "date": "2024-11",
+      "title": "A Long-Term Perspective on Australia's Love of Betting",
+      "url": "https://e61.in/a-long-term-perspective-on-australias-love-of-betting/",
+      "coauthors": [],
+      "venue": "e61 plus61"
+    }
+  ],
+  "otherMedia": [
+    {
+      "outlet": "ABC News",
+      "kind": "Interview",
+      "date": "2023-09",
+      "title": "New Zealand's housing density experiment saw approvals for new builds in Auckland 'skyrocket' while house prices kept climbing",
+      "url": "https://www.abc.net.au/news/2023-09-25/nz-auckland-house-supply-experiment-results-in-dramatic-change/102846126"
+    },
+    {
+      "outlet": "Apricitas Economics (Joseph Politano)",
+      "kind": "Coverage",
+      "date": "2024-03",
+      "title": "New Zealand's Building Boom, and What the World Must Learn From It",
+      "url": "https://www.apricitas.io/p/new-zealands-building-boomand-what"
+    },
+    {
+      "outlet": "Reason / Volokh Conspiracy (Ilya Somin)",
+      "kind": "Coverage",
+      "date": "2024-04",
+      "title": "New Zealand's YIMBY Success, and How We Can Learn From It",
+      "url": "https://reason.com/volokh/2024/04/03/new-zealands-yimby-success-and-how-we-can-learn-from-it/"
+    },
+    {
+      "outlet": "AFR",
+      "kind": "Coverage",
+      "date": "2025-12",
+      "title": "'YIMBY is a misnomer. They haven't got backyards'",
+      "url": "https://www.afr.com/property/residential/yimby-is-a-misnomer-they-haven-t-got-backyards-20251007-p5n0qw"
+    },
+    {
+      "outlet": "The Australian",
+      "kind": "Coverage",
+      "date": "2026-05",
+      "title": "Jim Chalmers is going for broke: will we end up a poorer country?",
+      "url": "https://www.theaustralian.com.au/inquirer/jim-chalmers-is-going-for-broke-will-we-end-up-a-poorer-country/news-story/4b0e43c9ee6baf91a6cd643df55710a4"
+    },
+    {
+      "outlet": "The Australian",
+      "kind": "Coverage",
+      "date": "2026-06",
+      "title": "Home ownership is Australia's monoculture",
+      "url": "https://www.theaustralian.com.au/commentary/home-ownership-is-australias-monoculture/news-story/bbbda68efb15d008d4a979b747961316"
+    }
+  ],
+  "policyShowFirst": 6
+}
