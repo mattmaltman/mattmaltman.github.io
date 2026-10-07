@@ -22,6 +22,8 @@ NAV = [  # (label, id, children)
     ("Research", None, [("Working Papers", "working-papers"), ("Publications", "publications")]),
     ("Long-Form", "long-form", []),
     ("Commentary", "commentary", []),
+    ("Submissions & Citations", "submissions", []),
+    ("Conferences", "conferences", []),
     ("Policy Work", "policy", []),
     ("Media", "media", []),
 ]
@@ -417,6 +419,42 @@ def render_other_media(entries):
     return "\n".join(out)
 
 
+def render_submissions(data):
+    """Two sub-lists: his own submissions, then policy documents that cite his work."""
+    subs = sorted(data.get("submissions") or [], key=lambda x: sort_key(x.get("date")), reverse=True)
+    cites = sorted(data.get("citedIn") or [], key=lambda x: sort_key(x.get("date")), reverse=True)
+    out = []
+    if subs:
+        out.append('  <h3>Submissions</h3>\n  <ul class="pubs">')
+        out += [pub_item(e) for e in subs]
+        out.append("  </ul>")
+    if cites:
+        out.append('  <h3>Cited In</h3>\n  <ul class="pubs cites">')
+        for c in cites:
+            date = fmt_date(c.get("date"))
+            note = f' <span class="note">{t(c["note"])}</span>' if c.get("note") else ""
+            out.append(
+                f'    <li>{t(c["issuer"])}, <a href="{a(c["url"])}">{t(c["title"])}</a>'
+                f'{", " + date if date else ""}.{note}</li>'
+            )
+        out.append("  </ul>")
+    return "\n".join(out)
+
+
+def render_conferences(entries):
+    out = []
+    for c in sorted(entries, key=lambda x: sort_key(x.get("date")), reverse=True):
+        name = t(c["name"]) + (f' ({t(c["abbr"])})' if c.get("abbr") else "")
+        where = ", ".join(str(x) for x in (c.get("year"), c.get("city")) if x)
+        paper = ""
+        if c.get("paper"):
+            paper = (f'<a href="{a(c["url"])}">{t(c["paper"])}</a>' if c.get("url")
+                     else f'<span class="title">{t(c["paper"])}</span>')
+            paper = f" {paper}"
+        out.append(f'    <li><span class="conf">{name}</span>, {t(where)}.{paper}</li>')
+    return "\n".join(out)
+
+
 def visible_nav(empty):
     """NAV with links to empty sections removed (and groups left with no children)."""
     out = []
@@ -490,6 +528,8 @@ def main():
         "publications": ("PUBLICATIONS", render_pubs(data.get("publications", []))),
         "long-form": ("LONG_FORM", render_pubs(data.get("longForm", []))),
         "commentary": ("COMMENTARY", render_commentary(data.get("commentary", []))),
+        "submissions": ("SUBMISSIONS", render_submissions(data)),
+        "conferences": ("CONFERENCES", render_conferences(data.get("conferences", []))),
         "policy": ("POLICY_TOPICS", render_policy(data)),
         "media": ("OTHER_MEDIA", render_other_media(data.get("otherMedia", []))),
     }

@@ -65,6 +65,9 @@ a.src-e61-research{text-decoration-color:var(--src-research)}a.src-e61-blog{text
 .tags a,.topic .tags a{display:inline;font-weight:400;margin:0;color:var(--muted);text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:2px}
 .tags a:hover{color:var(--hi)}
 .related{display:block;color:var(--muted);font-size:.85rem}.related a{color:var(--muted);text-decoration-thickness:1px}
+#submissions h3{margin-top:22px}#submissions h2+h3{margin-top:0}
+.cites .note{display:block;color:var(--muted);font-size:.85rem}
+#conferences .title{font-style:italic}
 .kind{font-family:"IBM Plex Mono",monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-right:6px}
 .topic details summary{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--muted);cursor:pointer;margin-bottom:12px}
 .topic details summary:hover{color:var(--hi)}
@@ -232,6 +235,18 @@ header img{width:160px;height:200px;object-fit:cover;object-position:top;border-
   <h2>Commentary</h2>
   <ul class="pubs">
 {{COMMENTARY}}
+  </ul>
+</section>
+
+<section id="submissions">
+  <h2>Submissions &amp; Policy Citations</h2>
+{{SUBMISSIONS}}
+</section>
+
+<section id="conferences">
+  <h2>Conferences &amp; Presentations</h2>
+  <ul class="pubs compact">
+{{CONFERENCES}}
   </ul>
 </section>
 

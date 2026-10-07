@@ -36,6 +36,12 @@
           "title": "Smaller Lot Sizes Could Boost Australian Housing Supply",
           "date": "2026-08",
           "url": "https://localipswichnews.com.au/news/new-research-backs-calls-to-ease-lot-size-rules-and-boost-supply/"
+        },
+        {
+          "outlet": "UCLA Housing Voice",
+          "title": "Reading List (9/9/26)",
+          "date": "2026-09",
+          "url": "https://uclahousingvoice.substack.com/p/ucla-housing-voice-reading-list-9926"
         }
       ],
       "seeAlso": [
@@ -44,6 +50,12 @@
           "url": "https://e61.in/to-increase-housing-supply-governments-should-target-bans-not-burdens/",
           "date": "2026-07",
           "venue": "e61 Newsletter"
+        },
+        {
+          "title": "Submission to the Productivity Commission Housing Supply Regulation Inquiry",
+          "url": "https://assets.pc.gov.au/2026-06/sub041-housing-supply.pdf?VersionId=bStlwyLe8q826LRUIrvee1sEc9LYi12Z",
+          "date": "2026-06",
+          "venue": "Productivity Commission submission"
         }
       ],
       "figure": {
@@ -203,7 +215,21 @@
           "venue": "One Final Effort"
         }
       ],
-      "abstract": "In 2016, the city of Auckland adopted zoning reforms that enabled more housing on approximately three-quarters of its urban land. Three subsequent studies have found that these reforms increased housing supply and reduced rents. Two economists have, however, criticised these studies on blogs and social media, describing their findings as a “myth”. Despite their informal nature, these critiques have been cited in formal planning and policy processes. Here, we review these critiques and find them to have little to no merit. Specifically, the critiques misunderstand the papers’ methods and rely on inappropriate analyses. In our view, there is remarkably robust evidence that zoning reforms increased housing supply and reduced rents in Auckland."
+      "abstract": "In 2016, the city of Auckland adopted zoning reforms that enabled more housing on approximately three-quarters of its urban land. Three subsequent studies have found that these reforms increased housing supply and reduced rents. Two economists have, however, criticised these studies on blogs and social media, describing their findings as a “myth”. Despite their informal nature, these critiques have been cited in formal planning and policy processes. Here, we review these critiques and find them to have little to no merit. Specifically, the critiques misunderstand the papers’ methods and rely on inappropriate analyses. In our view, there is remarkably robust evidence that zoning reforms increased housing supply and reduced rents in Auckland.",
+      "media": [
+        {
+          "outlet": "NZ Herald (The Listener)",
+          "title": "The shocks that shaped the nation",
+          "date": "2026-04",
+          "url": "https://www.nzherald.co.nz/the-listener/new-zealand/the-shocks-that-shaped-the-nation-how-these-big-economic-events-continue-to-affect-our-lives/premium/LUP7JZCI2NBJFL3ZQXF5SPWIF4/"
+        },
+        {
+          "outlet": "NZ Minister for Housing (speech)",
+          "title": "Speech to Committee for Auckland",
+          "date": "2026-02",
+          "url": "https://www.beehive.govt.nz/speech/speech-committee-auckland-1"
+        }
+      ]
     },
     {
       "title": "Going It Alone: The Impact of Upzoning on Housing Construction in Lower Hutt",
@@ -318,7 +344,15 @@
       "related": {
         "title": "Political Economy: The Market for Government Contracts and Influence",
         "url": "https://e61.in/political-economy-the-market-for-government-contracts-and-influence/"
-      }
+      },
+      "media": [
+        {
+          "outlet": "ABC Radio Sydney and 2CC interviews (via e61)",
+          "title": "Radio interviews on ABC Mornings Sydney and 2CC Breakfast",
+          "date": "2023-07",
+          "url": "https://e61.in/political-economy-the-market-for-government-contracts-and-influence-media-coverage/"
+        }
+      ]
     }
   ],
   "policyTopics": [
@@ -398,6 +432,12 @@
           "title": "Labor hasn't got a capital gains tax policy yet, but it's already making the case",
           "date": "2026-03",
           "url": "https://www.abc.net.au/news/2026-03-18/capital-gains-tax-labor-policy-federal-government/106465976"
+        },
+        {
+          "outlet": "Guardian",
+          "title": "Scaling back the CGT discount might not help housing affordability",
+          "date": "2026-02",
+          "url": "https://www.theguardian.com/australia-news/2026/feb/06/capital-gains-tax-discount-debate-australia-house-prices"
         }
       ],
       "seeAlso": [
@@ -465,6 +505,12 @@
           "title": "Time to end welfare for the wealthy, says big business",
           "date": "2026-04",
           "url": "https://www.afr.com/policy/economy/time-to-end-welfare-for-the-wealthy-says-big-business-20260420-p5zpdr"
+        },
+        {
+          "outlet": "Mirage News",
+          "title": "Australia's Safety Net Turns Less Progressive: Study",
+          "date": "2025-12",
+          "url": "https://www.miragenews.com/australias-safety-net-turns-less-progressive-1587433/"
         }
       ]
     },
@@ -630,6 +676,12 @@
           "title": "Gen Z will be richer than their parents. But here's the catch",
           "date": "2025-07",
           "url": "https://www.afr.com/policy/economy/will-gen-z-be-richer-than-their-parents-20250709-p5mdq8"
+        },
+        {
+          "outlet": "e61 Policy in the Pub (panel)",
+          "title": "Policy in the Pub: Young, Smart and Stuck? (panellist)",
+          "date": "2025-06",
+          "url": "https://e61.in/events/policy-in-the-pub-young-smart-and-stuck/"
         }
       ],
       "seeAlso": [
@@ -716,6 +768,14 @@
           "url": "https://e61.in/convenience-and-targeting-lessons-for-gambling-policy-reform/",
           "date": "2026-01",
           "venue": "e61 Newsletter"
+        }
+      ],
+      "media": [
+        {
+          "outlet": "Asia Gaming Brief",
+          "title": "Australia's credit-card betting ban cut online gambling but mostly by making it harder: Study",
+          "date": "2025-12",
+          "url": "https://agbrief.com/intel/deep-dive/03/12/2025/australias-credit-card-betting-ban-cut-online-gambling-but-mostly-by-making-it-harder-study/"
         }
       ]
     },
@@ -834,7 +894,15 @@
       "title": "A Detailed Look at the Outcomes of Minneapolis' Housing Reforms",
       "url": "https://onefinaleffort.com/blog/a-detailed-look-at-minneapolis-housing-supply-reforms",
       "coauthors": [],
-      "venue": "One Final Effort"
+      "venue": "One Final Effort",
+      "media": [
+        {
+          "outlet": "Noahpinion",
+          "title": "At least five interesting things for the middle of your week (#12)",
+          "date": "2023-08",
+          "url": "https://www.noahpinion.blog/p/at-least-five-interesting-things-a9a"
+        }
+      ]
     },
     {
       "topic": "Housing",
@@ -890,36 +958,27 @@
       "url": "https://e61.in/a-long-term-perspective-on-australias-love-of-betting/",
       "coauthors": [],
       "venue": "e61 plus61"
+    },
+    {
+      "topic": "Transfers & Welfare",
+      "source": "e61-research",
+      "date": "2026-09",
+      "title": "e61 Retirement Income Calculator",
+      "url": "https://e61.in/e61-retirement-income-calculator-calculator/",
+      "coauthors": [
+        "Jack Buckley",
+        "Matt Nolan"
+      ],
+      "venue": "e61 Institute Calculator"
     }
   ],
   "otherMedia": [
     {
-      "outlet": "ABC News",
-      "kind": "Interview",
-      "date": "2023-09",
-      "title": "New Zealand's housing density experiment saw approvals for new builds in Auckland 'skyrocket' while house prices kept climbing",
-      "url": "https://www.abc.net.au/news/2023-09-25/nz-auckland-house-supply-experiment-results-in-dramatic-change/102846126"
-    },
-    {
-      "outlet": "Apricitas Economics (Joseph Politano)",
+      "outlet": "The Australian",
       "kind": "Coverage",
-      "date": "2024-03",
-      "title": "New Zealand's Building Boom, and What the World Must Learn From It",
-      "url": "https://www.apricitas.io/p/new-zealands-building-boomand-what"
-    },
-    {
-      "outlet": "Reason / Volokh Conspiracy (Ilya Somin)",
-      "kind": "Coverage",
-      "date": "2024-04",
-      "title": "New Zealand's YIMBY Success, and How We Can Learn From It",
-      "url": "https://reason.com/volokh/2024/04/03/new-zealands-yimby-success-and-how-we-can-learn-from-it/"
-    },
-    {
-      "outlet": "AFR",
-      "kind": "Coverage",
-      "date": "2025-12",
-      "title": "'YIMBY is a misnomer. They haven't got backyards'",
-      "url": "https://www.afr.com/property/residential/yimby-is-a-misnomer-they-haven-t-got-backyards-20251007-p5n0qw"
+      "date": "2026-06",
+      "title": "Home ownership is Australia's monoculture",
+      "url": "https://www.theaustralian.com.au/commentary/home-ownership-is-australias-monoculture/news-story/bbbda68efb15d008d4a979b747961316"
     },
     {
       "outlet": "The Australian",
@@ -929,11 +988,229 @@
       "url": "https://www.theaustralian.com.au/inquirer/jim-chalmers-is-going-for-broke-will-we-end-up-a-poorer-country/news-story/4b0e43c9ee6baf91a6cd643df55710a4"
     },
     {
-      "outlet": "The Australian",
+      "outlet": "AFR",
       "kind": "Coverage",
-      "date": "2026-06",
-      "title": "Home ownership is Australia's monoculture",
-      "url": "https://www.theaustralian.com.au/commentary/home-ownership-is-australias-monoculture/news-story/bbbda68efb15d008d4a979b747961316"
+      "date": "2025-12",
+      "title": "'YIMBY is a misnomer. They haven't got backyards'",
+      "url": "https://www.afr.com/property/residential/yimby-is-a-misnomer-they-haven-t-got-backyards-20251007-p5n0qw"
+    },
+    {
+      "outlet": "MacroBusiness",
+      "kind": "Coverage",
+      "date": "2025-07",
+      "title": "Labor's student debt forgiveness is reverse Robin Hood",
+      "url": "https://www.macrobusiness.com.au/2025/07/labors-student-debt-forgiveness-is-reverse-robin-hood/"
+    },
+    {
+      "outlet": "More Housing",
+      "kind": "Coverage",
+      "date": "2025-06",
+      "title": "We need to increase housing starts per capita",
+      "url": "https://morehousing.substack.com/p/housing-starts"
+    },
+    {
+      "outlet": "Business Insider",
+      "kind": "Coverage",
+      "date": "2024-09",
+      "title": "A Swiss city cut red tape and ended up with many more homes. It's a model for the US.",
+      "url": "https://www.businessinsider.com/america-lower-rent-home-price-increases-build-more-houses-switzerland-2024-8"
+    },
+    {
+      "outlet": "Reason / Volokh Conspiracy (Ilya Somin)",
+      "kind": "Coverage",
+      "date": "2024-04",
+      "title": "New Zealand's YIMBY Success, and How We Can Learn From It",
+      "url": "https://reason.com/volokh/2024/04/03/new-zealands-yimby-success-and-how-we-can-learn-from-it/"
+    },
+    {
+      "outlet": "ABC RN Drive",
+      "kind": "Interview",
+      "date": "2024-04",
+      "title": "Can Australia learn from Auckland in bringing down housing costs?",
+      "url": "https://www.abc.net.au/listen/programs/radionational-drive/how-did-auckland-bring-down-housing/103742232"
+    },
+    {
+      "outlet": "ABC News",
+      "kind": "Coverage",
+      "date": "2024-04",
+      "title": "Jacinda Ardern slashed negative gearing in NZ. The new government has brought it back",
+      "url": "https://www.abc.net.au/news/2024-04-20/nz-reinstate-interest-deductibility-on-investment-properties/103685396"
+    },
+    {
+      "outlet": "Apricitas Economics (Joseph Politano)",
+      "kind": "Coverage",
+      "date": "2024-03",
+      "title": "New Zealand's Building Boom, and What the World Must Learn From It",
+      "url": "https://www.apricitas.io/p/new-zealands-building-boomand-what"
+    },
+    {
+      "outlet": "The Spinoff",
+      "kind": "Coverage",
+      "date": "2024-02",
+      "title": "Dear Wellington, please don't allow more housing. Love, an Aucklander",
+      "url": "https://thespinoff.co.nz/politics/26-02-2024/dear-wellington-please-dont-allow-more-housing-love-an-aucklander"
+    },
+    {
+      "outlet": "The Spinoff",
+      "kind": "Coverage",
+      "date": "2024-01",
+      "title": "A call to arms for Wellingtonians",
+      "url": "https://thespinoff.co.nz/the-bulletin/30-01-2024/a-call-to-arms-for-wellingtonians"
+    },
+    {
+      "outlet": "The Spinoff",
+      "kind": "Coverage",
+      "date": "2024-01",
+      "title": "Announcing the War for Wellington",
+      "url": "https://thespinoff.co.nz/wellington/30-01-2024/announcing-the-war-for-wellington"
+    },
+    {
+      "outlet": "Guardian",
+      "kind": "Coverage",
+      "date": "2023-10",
+      "title": "Brisbane planning laws keeping poor out of city's most desirable suburbs, research suggests",
+      "url": "https://www.theguardian.com/australia-news/2023/oct/22/brisbane-planning-laws-keeping-poor-out-of-citys-most-desirable-suburbs-research-suggests"
+    },
+    {
+      "outlet": "ABC News",
+      "kind": "Interview",
+      "date": "2023-09",
+      "title": "New Zealand's housing density experiment saw approvals for new builds in Auckland 'skyrocket' while house prices kept climbing",
+      "url": "https://www.abc.net.au/news/2023-09-25/nz-auckland-house-supply-experiment-results-in-dramatic-change/102846126"
+    },
+    {
+      "outlet": "Business Insider",
+      "kind": "Coverage",
+      "date": "2023-08",
+      "title": "America, take note: New Zealand has figured out a simple way to bring down home prices",
+      "url": "https://www.businessinsider.com/america-lower-rents-home-prices-build-more-houses-new-zealand-2023-8"
+    },
+    {
+      "outlet": "ABC News",
+      "kind": "Coverage",
+      "date": "2023-08",
+      "title": "On a 650sqm block, a group of NZ friends built a new type of home. Are there lessons for Australians?",
+      "url": "https://www.abc.net.au/news/2023-08-24/nz-opens-density-limits-friends-developing-new-housing/102714716"
+    }
+  ],
+  "_submissionsNotes": "Submissions & Policy Citations section. 'submissions': his own submissions ({title, url, coauthors, venue, details, date}). 'citedIn': government and policy documents citing his work ({issuer, title, url, date, note}). Both newest first; an empty pair hides the section.",
+  "submissions": [
+    {
+      "title": "Submission to the Productivity Commission Housing Supply Regulation Inquiry",
+      "url": "https://assets.pc.gov.au/2026-06/sub041-housing-supply.pdf?VersionId=bStlwyLe8q826LRUIrvee1sEc9LYi12Z",
+      "coauthors": [
+        "Theo Gibbons"
+      ],
+      "venue": "Productivity Commission",
+      "details": "Submission 41, Jun 2026",
+      "date": "2026-06"
+    },
+    {
+      "title": "Submission to the Senate Select Committee on the Operation of the Capital Gains Tax Discount",
+      "url": "https://e61.in/submission-to-the-senate-select-committee-on-the-operation-of-the-capital-gains-tax-discount/",
+      "coauthors": [
+        "Greg Kaplan",
+        "Matt Nolan"
+      ],
+      "venue": "e61 Institute Submission",
+      "details": "Jan 2026",
+      "date": "2026-01"
+    },
+    {
+      "title": "Submission to the Senate Inquiry into the Worsening Rental Crisis in Australia",
+      "url": "https://www.aph.gov.au/DocumentStore.ashx?id=21e439be-2ce8-4d26-892c-3e28ce492634&subId=746507",
+      "coauthors": [],
+      "venue": "One Final Effort",
+      "details": "Submission 381, Aug 2023",
+      "date": "2023-08"
+    }
+  ],
+  "citedIn": [
+    {
+      "issuer": "Productivity Commission",
+      "title": "Housing Supply Regulation: Interim Report",
+      "url": "https://assets.pc.gov.au/2026-07/housing-supply-interim.pdf?VersionId=jcCTe3ztH8OtVerAHQip9F4w0P9bBNTy",
+      "date": "2026-07",
+      "note": "Draws on the bans vs burdens framing; cites the Lower Hutt, Auckland, and Campbelltown work."
+    },
+    {
+      "issuer": "NZ Ministry of Housing and Urban Development",
+      "title": "Submission on Auckland Plan Change 120",
+      "url": "https://www.hud.govt.nz/assets/Uploads/Documents/Ministry-of-Housing-and-Urban-Development-submission-on-Plan-Change-120.pdf",
+      "date": "2025-12",
+      "note": "Cites Going It Alone."
+    },
+    {
+      "issuer": "Parliamentary Library",
+      "title": "Bills Digest: Universities Accord (Cutting Student Debt by 20 Per Cent) Bill 2025",
+      "url": "https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd001",
+      "date": "2025-07",
+      "note": "Cites Upcoming HELP Repayment Changes and the e61 Who Will It HELP? analysis."
+    },
+    {
+      "issuer": "Stephen King (Productivity Commission)",
+      "title": "Competitive Care: Why, When and How Competition Can Improve Human Services",
+      "url": "https://treasury.gov.au/sites/default/files/2025-10/p2025-706894-king.pdf",
+      "date": "2025-02",
+      "note": "Cites What If We Didn't Care?"
+    },
+    {
+      "issuer": "Hon Chris Bishop, Minister for Housing and RMA Reform",
+      "title": "Speech to Committee for Auckland",
+      "url": "https://www.beehive.govt.nz/speech/speech-committee-auckland-1",
+      "date": "2026-02",
+      "note": "Quotes Dispelling Myths: \"remarkably robust evidence that zoning reforms increased housing supply and reduced rents in Auckland.\""
+    }
+  ],
+  "_conferencesNotes": "Conferences & Presentations: {name, abbr?, year, city?, date (YYYY-MM, for sorting), paper?, url?}. Newest first; leave 'paper' out when it is not confirmed.",
+  "conferences": [
+    {
+      "name": "Australian Workshop on Public Finance",
+      "abbr": "AWPF, TTPI",
+      "year": 2026,
+      "city": "Canberra",
+      "date": "2026-07",
+      "paper": "Heterogeneity in the Australian Tax System"
+    },
+    {
+      "name": "Australian Conference of Economists",
+      "abbr": "ACE",
+      "year": 2026,
+      "city": "Canberra",
+      "date": "2026-07"
+    },
+    {
+      "name": "Australian Gender Economics Workshop",
+      "abbr": "AGEW",
+      "year": 2026,
+      "city": "Melbourne",
+      "date": "2026-02"
+    },
+    {
+      "name": "OzMac Workshop",
+      "year": 2025,
+      "city": "Brisbane",
+      "date": "2025-12",
+      "paper": "Zoning Reform and Construction Sector Productivity",
+      "url": "https://doi.org/10.2139/ssrn.5386023"
+    },
+    {
+      "name": "Australian Conference of Economists",
+      "abbr": "ACE",
+      "year": 2025,
+      "city": "Sydney",
+      "date": "2025-07",
+      "paper": "How Does the Tax-Transfer System Replace Income After Job Loss?",
+      "url": "https://e61.in/how-does-the-tax-transfer-system-replace-income-after-job-loss/"
+    },
+    {
+      "name": "Australian Conference of Economists",
+      "abbr": "ACE",
+      "year": 2024,
+      "city": "Adelaide",
+      "date": "2024-07",
+      "paper": "Going It Alone: The Impact of Upzoning on Housing Construction in Lower Hutt",
+      "url": "https://doi.org/10.1016/j.jhe.2024.102032"
     }
   ],
   "policyShowFirst": 6
