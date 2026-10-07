@@ -65,9 +65,18 @@ a.src-e61-research{text-decoration-color:var(--src-research)}a.src-e61-blog{text
 .tags a,.topic .tags a{display:inline;font-weight:400;margin:0;color:var(--muted);text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:2px}
 .tags a:hover{color:var(--hi)}
 .related{display:block;color:var(--muted);font-size:.85rem}.related a{color:var(--muted);text-decoration-thickness:1px}
-#submissions h3{margin-top:22px}#submissions h2+h3{margin-top:0}
-.cites .note{display:block;color:var(--muted);font-size:.85rem}
-#conferences .title{font-style:italic}
+/* Cited in Policy: short cards in the Policy-grid style, denser grid */
+.topics.cites{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px 28px}
+.cites .topic a{font-size:.95rem;line-height:1.4}
+.cites .note{display:block;color:var(--muted);font-size:.8rem;line-height:1.4;margin-top:4px}
+/* Conferences: one column per year (stacked on phones), compact entries */
+.topics.confs{grid-template-columns:minmax(0,1fr);gap:20px 32px}
+@media(min-width:700px){.topics.confs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.confs .topic li{margin-bottom:10px;font-size:.9rem;line-height:1.35}
+.confs .conf{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:.85rem;text-decoration:underline dotted var(--muted);text-decoration-thickness:1px;text-underline-offset:3px;cursor:help}.confs span.conf{text-decoration:none;cursor:auto}
+.confs .city{color:var(--muted);font-size:.82rem;margin-left:6px}
+.confs .paper{display:block;font-size:.82rem;font-weight:400;margin:2px 0 0}
+.confs .title{font-style:italic;font-weight:400}
 .kind{font-family:"IBM Plex Mono",monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-right:6px}
 .topic details summary{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--muted);cursor:pointer;margin-bottom:12px}
 .topic details summary:hover{color:var(--hi)}
@@ -198,10 +207,11 @@ header img{width:160px;height:200px;object-fit:cover;object-position:top;border-
     </li>
     <li><a href="#long-form">Long-Form</a></li>
     <li><a href="#commentary">Commentary</a></li>
-    <li><a href="#submissions">Submissions &amp; Citations</a></li>
+    <li><a href="#submissions">Submissions</a></li>
     <li><a href="#conferences">Conferences</a></li>
     <li><a href="#policy">Policy Work</a></li>
     <li><a href="#media">Media</a></li>
+    <li><a href="#cited-in">Cited in Policy</a></li>
   </ul>
 </nav>
 <main>
@@ -218,7 +228,7 @@ header img{width:160px;height:200px;object-fit:cover;object-position:top;border-
     </ul>
   </div>
 </header>
-<nav class="toc-row" aria-label="Sections"><a href="#working-papers">Research</a><a href="#long-form">Long-Form</a><a href="#commentary">Commentary</a><a href="#submissions">Submissions &amp; Citations</a><a href="#conferences">Conferences</a><a href="#policy">Policy Work</a><a href="#media">Media</a></nav>
+<nav class="toc-row" aria-label="Sections"><a href="#working-papers">Research</a><a href="#long-form">Long-Form</a><a href="#commentary">Commentary</a><a href="#submissions">Submissions</a><a href="#conferences">Conferences</a><a href="#policy">Policy Work</a><a href="#media">Media</a><a href="#cited-in">Cited in Policy</a></nav>
 
 <section>
   <p>I am a first-year Economics PhD Student at the University of Chicago. I am interested in housing markets, microfounded macro, public finance, and public policy.</p>
@@ -289,8 +299,7 @@ header img{width:160px;height:200px;object-fit:cover;object-position:top;border-
 </section>
 
 <section id="submissions">
-  <h2>Submissions &amp; Policy Citations</h2>
-  <h3>Submissions</h3>
+  <h2>Submissions</h2>
   <ul class="pubs">
     <li>
       <a class="title" href="https://assets.pc.gov.au/2026-06/sub041-housing-supply.pdf?VersionId=bStlwyLe8q826LRUIrvee1sEc9LYi12Z">Submission to the Productivity Commission Housing Supply Regulation Inquiry</a><br>
@@ -305,26 +314,33 @@ header img{width:160px;height:200px;object-fit:cover;object-position:top;border-
       <span class="meta"><span class="venue">One Final Effort</span>, Submission 381, Aug 2023.</span>
     </li>
   </ul>
-  <h3>Cited In</h3>
-  <ul class="pubs cites">
-    <li>Productivity Commission, <a href="https://assets.pc.gov.au/2026-07/housing-supply-interim.pdf?VersionId=jcCTe3ztH8OtVerAHQip9F4w0P9bBNTy">Housing Supply Regulation: Interim Report</a>, Jul 2026. <span class="note">Draws on the bans vs burdens framing; cites the Lower Hutt, Auckland, and Campbelltown work.</span></li>
-    <li>Hon Chris Bishop, Minister for Housing and RMA Reform, <a href="https://www.beehive.govt.nz/speech/speech-committee-auckland-1">Speech to Committee for Auckland</a>, Feb 2026. <span class="note">Quotes Dispelling Myths: "remarkably robust evidence that zoning reforms increased housing supply and reduced rents in Auckland."</span></li>
-    <li>NZ Ministry of Housing and Urban Development, <a href="https://www.hud.govt.nz/assets/Uploads/Documents/Ministry-of-Housing-and-Urban-Development-submission-on-Plan-Change-120.pdf">Submission on Auckland Plan Change 120</a>, Dec 2025. <span class="note">Cites Going It Alone.</span></li>
-    <li>Parliamentary Library, <a href="https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd001">Bills Digest: Universities Accord (Cutting Student Debt by 20 Per Cent) Bill 2025</a>, Jul 2025. <span class="note">Cites Upcoming HELP Repayment Changes and the e61 Who Will It HELP? analysis.</span></li>
-    <li>Stephen King (Productivity Commission), <a href="https://treasury.gov.au/sites/default/files/2025-10/p2025-706894-king.pdf">Competitive Care: Why, When and How Competition Can Improve Human Services</a>, Feb 2025. <span class="note">Cites What If We Didn't Care?</span></li>
-  </ul>
 </section>
 
-<section id="conferences">
+<section id="conferences" class="wide">
   <h2>Conferences &amp; Presentations</h2>
-  <ul class="pubs compact">
-    <li><span class="conf">Australian Workshop on Public Finance (AWPF, TTPI)</span>, 2026, Canberra. <span class="title">Heterogeneity in the Australian Tax System</span></li>
-    <li><span class="conf">Australian Conference of Economists (ACE)</span>, 2026, Canberra.</li>
-    <li><span class="conf">Australian Gender Economics Workshop (AGEW)</span>, 2026, Melbourne.</li>
-    <li><span class="conf">OzMac Workshop</span>, 2025, Brisbane. <a href="https://doi.org/10.2139/ssrn.5386023">Zoning Reform and Construction Sector Productivity</a></li>
-    <li><span class="conf">Australian Conference of Economists (ACE)</span>, 2025, Sydney. <a href="https://e61.in/how-does-the-tax-transfer-system-replace-income-after-job-loss/">How Does the Tax-Transfer System Replace Income After Job Loss?</a></li>
-    <li><span class="conf">Australian Conference of Economists (ACE)</span>, 2024, Adelaide. <a href="https://doi.org/10.1016/j.jhe.2024.102032">Going It Alone: The Impact of Upzoning on Housing Construction in Lower Hutt</a></li>
-  </ul>
+  <div class="topics confs">
+    <div class="topic">
+      <h3>2026</h3>
+      <ul>
+        <li><abbr class="conf" title="Australian Workshop on Public Finance">AWPF, TTPI</abbr> <span class="city">Canberra</span><span class="paper title">Heterogeneity in the Australian Tax System</span></li>
+        <li><abbr class="conf" title="Australian Conference of Economists">ACE</abbr> <span class="city">Canberra</span><a class="paper" href="https://e61.in/what-local-land-use-reform-does-and-doesnt-do/">What Local Land Use Reform Does, and Doesn't, Do</a></li>
+        <li><abbr class="conf" title="Australian Gender Economics Workshop">AGEW</abbr> <span class="city">Melbourne</span><span class="paper title">Family Tax Bunching</span></li>
+      </ul>
+    </div>
+    <div class="topic">
+      <h3>2025</h3>
+      <ul>
+        <li><span class="conf">OzMac Workshop</span> <span class="city">Brisbane</span><a class="paper" href="https://doi.org/10.2139/ssrn.5386023">Zoning Reform and Construction Sector Productivity</a></li>
+        <li><abbr class="conf" title="Australian Conference of Economists">ACE</abbr> <span class="city">Sydney</span><a class="paper" href="https://e61.in/how-does-the-tax-transfer-system-replace-income-after-job-loss/">How Does the Tax-Transfer System Replace Income After Job Loss?</a></li>
+      </ul>
+    </div>
+    <div class="topic">
+      <h3>2024</h3>
+      <ul>
+        <li><abbr class="conf" title="Australian Conference of Economists">ACE</abbr> <span class="city">Adelaide</span><a class="paper" href="https://doi.org/10.1016/j.jhe.2024.102032">Going It Alone: The Impact of Upzoning on Housing Construction in Lower Hutt</a></li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <section id="policy" class="wide">
@@ -421,6 +437,42 @@ header img{width:160px;height:200px;object-fit:cover;object-position:top;border-
     <li><span class="kind">Coverage</span>Business Insider, <a href="https://www.businessinsider.com/america-lower-rents-home-prices-build-more-houses-new-zealand-2023-8">America, take note: New Zealand has figured out a simple way to bring down home prices</a>, Aug 2023.</li>
     <li><span class="kind">Coverage</span>ABC News, <a href="https://www.abc.net.au/news/2023-08-24/nz-opens-density-limits-friends-developing-new-housing/102714716">On a 650sqm block, a group of NZ friends built a new type of home. Are there lessons for Australians?</a>, Aug 2023.</li>
   </ul>
+</section>
+
+<section id="cited-in" class="wide">
+  <h2>Cited in Policy</h2>
+  <div class="topics cites">
+    <div class="topic">
+      <h3>Productivity Commission</h3>
+      <a href="https://assets.pc.gov.au/2026-07/housing-supply-interim.pdf?VersionId=jcCTe3ztH8OtVerAHQip9F4w0P9bBNTy">Housing Supply Regulation: Interim Report</a>
+      <span class="meta">Jul 2026</span>
+      <span class="note">Draws on the bans vs burdens framing; cites the Lower Hutt, Auckland, and Campbelltown work.</span>
+    </div>
+    <div class="topic">
+      <h3>Hon Chris Bishop, NZ Minister for Housing</h3>
+      <a href="https://www.beehive.govt.nz/speech/speech-committee-auckland-1">Speech to Committee for Auckland</a>
+      <span class="meta">Feb 2026</span>
+      <span class="note">Quotes Dispelling Myths: "remarkably robust evidence that zoning reforms increased housing supply and reduced rents in Auckland."</span>
+    </div>
+    <div class="topic">
+      <h3>NZ Ministry of Housing and Urban Development</h3>
+      <a href="https://www.hud.govt.nz/assets/Uploads/Documents/Ministry-of-Housing-and-Urban-Development-submission-on-Plan-Change-120.pdf">Submission on Auckland Plan Change 120</a>
+      <span class="meta">Dec 2025</span>
+      <span class="note">Cites Going It Alone.</span>
+    </div>
+    <div class="topic">
+      <h3>Parliamentary Library</h3>
+      <a href="https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd001">Bills Digest: Universities Accord (Cutting Student Debt by 20 Per Cent) Bill 2025</a>
+      <span class="meta">Jul 2025</span>
+      <span class="note">Cites Upcoming HELP Repayment Changes and the e61 Who Will It HELP? analysis.</span>
+    </div>
+    <div class="topic">
+      <h3>Stephen King (Productivity Commission)</h3>
+      <a href="https://treasury.gov.au/sites/default/files/2025-10/p2025-706894-king.pdf">Competitive Care: Why, When and How Competition Can Improve Human Services</a>
+      <span class="meta">Feb 2025</span>
+      <span class="note">Cites What If We Didn't Care?</span>
+    </div>
+  </div>
 </section>
 
 <footer>

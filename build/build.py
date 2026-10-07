@@ -22,10 +22,11 @@ NAV = [  # (label, id, children)
     ("Research", None, [("Working Papers", "working-papers"), ("Publications", "publications")]),
     ("Long-Form", "long-form", []),
     ("Commentary", "commentary", []),
-    ("Submissions & Citations", "submissions", []),
+    ("Submissions", "submissions", []),
     ("Conferences", "conferences", []),
     ("Policy Work", "policy", []),
     ("Media", "media", []),
+    ("Cited in Policy", "cited-in", []),
 ]
 
 
@@ -420,39 +421,49 @@ def render_other_media(entries):
 
 
 def render_submissions(data):
-    """Two sub-lists: his own submissions, then policy documents that cite his work."""
+    """His own submissions, newest first, in the standard list style."""
     subs = sorted(data.get("submissions") or [], key=lambda x: sort_key(x.get("date")), reverse=True)
+    return "\n".join(pub_item(e) for e in subs)
+
+
+def render_cited_in(data):
+    """Policy documents citing his work: one card per item (Policy-grid style), newest first."""
     cites = sorted(data.get("citedIn") or [], key=lambda x: sort_key(x.get("date")), reverse=True)
     out = []
-    if subs:
-        out.append('  <h3>Submissions</h3>\n  <ul class="pubs">')
-        out += [pub_item(e) for e in subs]
-        out.append("  </ul>")
-    if cites:
-        out.append('  <h3>Cited In</h3>\n  <ul class="pubs cites">')
-        for c in cites:
-            date = fmt_date(c.get("date"))
-            note = f' <span class="note">{t(c["note"])}</span>' if c.get("note") else ""
-            out.append(
-                f'    <li>{t(c["issuer"])}, <a href="{a(c["url"])}">{t(c["title"])}</a>'
-                f'{", " + date if date else ""}.{note}</li>'
-            )
-        out.append("  </ul>")
+    for c in cites:
+        date = fmt_date(c.get("date"))
+        html = ['    <div class="topic">', f'      <h3>{t(c["issuer"])}</h3>',
+                f'      <a href="{a(c["url"])}">{t(c["title"])}</a>']
+        if date:
+            html.append(f'      <span class="meta">{date}</span>')
+        if c.get("note"):
+            html.append(f'      <span class="note">{t(c["note"])}</span>')
+        html.append("    </div>")
+        out.append("\n".join(html))
     return "\n".join(out)
 
 
 def render_conferences(entries):
-    out = []
-    for c in sorted(entries, key=lambda x: sort_key(x.get("date")), reverse=True):
-        name = t(c["name"]) + (f' ({t(c["abbr"])})' if c.get("abbr") else "")
-        where = ", ".join(str(x) for x in (c.get("year"), c.get("city")) if x)
-        paper = ""
-        if c.get("paper"):
-            paper = (f'<a href="{a(c["url"])}">{t(c["paper"])}</a>' if c.get("url")
-                     else f'<span class="title">{t(c["paper"])}</span>')
-            paper = f" {paper}"
-        out.append(f'    <li><span class="conf">{name}</span>, {t(where)}.{paper}</li>')
-    return "\n".join(out)
+    """One column per year, newest first; compact entries within each year."""
+    years = sorted({c["year"] for c in entries}, reverse=True)
+    blocks = []
+    for y in years:
+        items = sorted((c for c in entries if c["year"] == y), key=lambda x: sort_key(x.get("date")), reverse=True)
+        html = ['    <div class="topic">', f"      <h3>{y}</h3>", "      <ul>"]
+        for c in items:
+            if c.get("abbr"):
+                name = f'<abbr class="conf" title="{a(c["name"])}">{t(c["abbr"])}</abbr>'
+            else:
+                name = f'<span class="conf">{t(c["name"])}</span>'
+            city = f' <span class="city">{t(c["city"])}</span>' if c.get("city") else ""
+            paper = ""
+            if c.get("paper"):
+                paper = (f'<a class="paper" href="{a(c["url"])}">{t(c["paper"])}</a>' if c.get("url")
+                         else f'<span class="paper title">{t(c["paper"])}</span>')
+            html.append(f"        <li>{name}{city}{paper}</li>")
+        html += ["      </ul>", "    </div>"]
+        blocks.append("\n".join(html))
+    return "\n".join(blocks)
 
 
 def visible_nav(empty):
@@ -532,6 +543,7 @@ def main():
         "conferences": ("CONFERENCES", render_conferences(data.get("conferences", []))),
         "policy": ("POLICY_TOPICS", render_policy(data)),
         "media": ("OTHER_MEDIA", render_other_media(data.get("otherMedia", []))),
+        "cited-in": ("CITED_IN", render_cited_in(data)),
     }
     empty = {sid for sid, (_, html) in sections.items() if not html.strip()}
     out = tpl

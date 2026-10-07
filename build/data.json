@@ -1093,7 +1093,7 @@
       "url": "https://www.abc.net.au/news/2023-08-24/nz-opens-density-limits-friends-developing-new-housing/102714716"
     }
   ],
-  "_submissionsNotes": "Submissions & Policy Citations section. 'submissions': his own submissions ({title, url, coauthors, venue, details, date}). 'citedIn': government and policy documents citing his work ({issuer, title, url, date, note}). Both newest first; an empty pair hides the section.",
+  "_submissionsNotes": "'submissions': his own submissions ({title, url, coauthors, venue, details, date}), rendered in the Submissions section. 'citedIn': government and policy documents citing his work ({issuer, title, url, date, note}), rendered as cards in the Cited in Policy section at the bottom of the page. Each list is sorted newest first; an empty list hides its section.",
   "submissions": [
     {
       "title": "Submission to the Productivity Commission Housing Supply Regulation Inquiry",
@@ -1155,14 +1155,14 @@
       "note": "Cites What If We Didn't Care?"
     },
     {
-      "issuer": "Hon Chris Bishop, Minister for Housing and RMA Reform",
+      "issuer": "Hon Chris Bishop, NZ Minister for Housing",
       "title": "Speech to Committee for Auckland",
       "url": "https://www.beehive.govt.nz/speech/speech-committee-auckland-1",
       "date": "2026-02",
       "note": "Quotes Dispelling Myths: \"remarkably robust evidence that zoning reforms increased housing supply and reduced rents in Auckland.\""
     }
   ],
-  "_conferencesNotes": "Conferences & Presentations: {name, abbr?, year, city?, date (YYYY-MM, for sorting), paper?, url?}. Newest first; leave 'paper' out when it is not confirmed.",
+  "_conferencesNotes": "Conferences & Presentations: {name, abbr?, year, city?, date (YYYY-MM, for sorting), paper?, url?}. Rendered as one column per year, newest first; leave 'paper' out when it is not confirmed.",
   "conferences": [
     {
       "name": "Australian Workshop on Public Finance",
@@ -1177,14 +1177,17 @@
       "abbr": "ACE",
       "year": 2026,
       "city": "Canberra",
-      "date": "2026-07"
+      "date": "2026-07",
+      "paper": "What Local Land Use Reform Does, and Doesn't, Do",
+      "url": "https://e61.in/what-local-land-use-reform-does-and-doesnt-do/"
     },
     {
       "name": "Australian Gender Economics Workshop",
       "abbr": "AGEW",
       "year": 2026,
       "city": "Melbourne",
-      "date": "2026-02"
+      "date": "2026-02",
+      "paper": "Family Tax Bunching"
     },
     {
       "name": "OzMac Workshop",

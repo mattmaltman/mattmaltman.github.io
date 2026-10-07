@@ -65,9 +65,18 @@ a.src-e61-research{text-decoration-color:var(--src-research)}a.src-e61-blog{text
 .tags a,.topic .tags a{display:inline;font-weight:400;margin:0;color:var(--muted);text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:2px}
 .tags a:hover{color:var(--hi)}
 .related{display:block;color:var(--muted);font-size:.85rem}.related a{color:var(--muted);text-decoration-thickness:1px}
-#submissions h3{margin-top:22px}#submissions h2+h3{margin-top:0}
-.cites .note{display:block;color:var(--muted);font-size:.85rem}
-#conferences .title{font-style:italic}
+/* Cited in Policy: short cards in the Policy-grid style, denser grid */
+.topics.cites{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px 28px}
+.cites .topic a{font-size:.95rem;line-height:1.4}
+.cites .note{display:block;color:var(--muted);font-size:.8rem;line-height:1.4;margin-top:4px}
+/* Conferences: one column per year (stacked on phones), compact entries */
+.topics.confs{grid-template-columns:minmax(0,1fr);gap:20px 32px}
+@media(min-width:700px){.topics.confs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.confs .topic li{margin-bottom:10px;font-size:.9rem;line-height:1.35}
+.confs .conf{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:.85rem;text-decoration:underline dotted var(--muted);text-decoration-thickness:1px;text-underline-offset:3px;cursor:help}.confs span.conf{text-decoration:none;cursor:auto}
+.confs .city{color:var(--muted);font-size:.82rem;margin-left:6px}
+.confs .paper{display:block;font-size:.82rem;font-weight:400;margin:2px 0 0}
+.confs .title{font-style:italic;font-weight:400}
 .kind{font-family:"IBM Plex Mono",monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-right:6px}
 .topic details summary{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--muted);cursor:pointer;margin-bottom:12px}
 .topic details summary:hover{color:var(--hi)}
@@ -239,15 +248,17 @@ header img{width:160px;height:200px;object-fit:cover;object-position:top;border-
 </section>
 
 <section id="submissions">
-  <h2>Submissions &amp; Policy Citations</h2>
+  <h2>Submissions</h2>
+  <ul class="pubs">
 {{SUBMISSIONS}}
+  </ul>
 </section>
 
-<section id="conferences">
+<section id="conferences" class="wide">
   <h2>Conferences &amp; Presentations</h2>
-  <ul class="pubs compact">
+  <div class="topics confs">
 {{CONFERENCES}}
-  </ul>
+  </div>
 </section>
 
 <section id="policy" class="wide">
@@ -263,6 +274,13 @@ header img{width:160px;height:200px;object-fit:cover;object-position:top;border-
   <ul class="pubs compact">
 {{OTHER_MEDIA}}
   </ul>
+</section>
+
+<section id="cited-in" class="wide">
+  <h2>Cited in Policy</h2>
+  <div class="topics cites">
+{{CITED_IN}}
+  </div>
 </section>
 
 <footer>
